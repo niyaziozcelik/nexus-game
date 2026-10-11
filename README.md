@@ -40,38 +40,38 @@ Nexus'un seçim ekranında Yin ve Yang vardır, ama klasik simgenin aksine içle
 ## Teknik altyapı
 
 ### Girdi ve hareket
-![Hareket ve zıplama girdisi](screenshots/bp-input-eventgraph.png)
+![Hareket ve zıplama girdisi]
 
 `IA_Move` yön girdisini karaktere iletir, `IA_Jump` zıplamayı başlatır. `BeginPlay`'de mapping context eklenir.
 
-![Mapping context](screenshots/bp-add-mapping-context.png)
+![Mapping context]
 
 Oyuncu kontrolcüsü üzerinden Enhanced Input Local Player Subsystem'e `IMC_RedHood` eklenir.
 
-![Yön çevirme](screenshots/bp-rotation.png)
+![Yön çevirme]
 
 İvmenin X bileşenine göre kontrol rotasyonu 0° ya da 180° olarak ayarlanır, böylece karakter sola ya da sağa bakar.
 
 ### Animasyon veri akışı (PaperZD)
-![AnimBP olay grafiği](screenshots/abp-eventgraph.png)
-![Değişkenlerin saklanması](screenshots/abp-store-variables.png)
-![Değişkenlerin güncellenmesi](screenshots/abp-update-variables.png)
+![AnimBP olay grafiği]
+![Değişkenlerin saklanması]
+![Değişkenlerin güncellenmesi]
 
 Başlangıçta karakter referansı saklanır; her tick'te hızın XY uzunluğu (`IsMoving`) ve düşme durumu (`IsFalling`) okunup animasyon grafiğine aktarılır.
 
-![Locomotion state machine](screenshots/abp-locomotion-state-machine.png)
+![Locomotion state machine]
 
 Idle, Running ve Jump durumları arasındaki geçişler PaperZD state machine'iyle yönetilir.
 
 ### Animation Source ve asset değişimi
-![Animation Source](screenshots/as-redhood-animation-source.png)
+![Animation Source]
 
 Karakterin tüm animasyonları Animation Source üzerinden veriye bağlı tanımlanır. Azra'nın özgün Yang idle'ı (`yang_FINAL-Sheet1`) "NewIdle" olarak aynı hatta test edildi: sistemler değişmeden, sprite'lar yenisiyle değiştirilebilir.
 
 ### Proje yapısı
-![İçerik yapısı](screenshots/content-structure.png)
-![Asset klasörleri](screenshots/content-assets.png)
-![Karakter klasörü](screenshots/content-characters.png)
+![İçerik yapısı]
+![Asset klasörleri]
+![Karakter klasörü]
 
 ---
 
