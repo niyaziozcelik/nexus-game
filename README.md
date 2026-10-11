@@ -112,4 +112,4 @@ Ekip, Kantei Dublaj topluluğunda birlikte seslendirme ve video prodüksiyonu i�
 
 ## Lisans
 
-Tüm hakları saklıdır. Bu depo bir portfolyo ve başvuru sayfasıdır, oyun kaynak kodu içermez.
+Tüm hakları saklıdır. Bu depo bir portfolyo ve başvuru sayfasıdır.
